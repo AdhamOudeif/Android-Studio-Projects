@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6CC670"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:background="@color/cardview_light_background">
+
+
+        <TableRow android:background="@drawable/border">
+            android:background="@drawable/border">
+
+            <TextView
+                style="@style/LabelTheme"
+                android:background="@drawable/border"
+                android:fallbackLineSpacing="false"
+                android:text="Assignment" />
+
+            <EditText
+                android:id="@+id/assignmentInput"
+                style="@style/InputTheme"
+                android:hint="0-200"
+                android:inputType="number" />
+        </TableRow>
+
+        <TableRow android:background="@drawable/border">
+
+            <TextView
+                style="@style/LabelTheme"
+                android:background="@drawable/border"
+                android:text="Midterm" />
+
+            <EditText
+                android:id="@+id/midtermInput"
+                style="@style/InputTheme"
+                android:hint="0-100"
+                android:inputType="number" />
+        </TableRow>
+
+        <TableRow android:background="@drawable/border">
+
+            <TextView
+                style="@style/LabelTheme"
+                android:background="@drawable/border"
+                android:text="Final" />
+
+            <EditText
+                android:id="@+id/finalInput"
+                style="@style/InputTheme"
+                android:hint="0-100"
+                android:inputType="number" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/LabelTheme"
+                android:text="Final Grade"
+                android:background="@drawable/border"
+                />
+
+            <TextView
+                android:id="@+id/scoreOutput"
+                style="@style/ViewTheme"
+                android:text="---%"
+                android:background="@drawable/border"
+                />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/LabelTheme"
+                android:text="Letter Grade"
+                android:background="@drawable/border"
+                />
+
+            <TextView
+                android:id="@+id/letterOutput"
+                style="@style/ViewTheme"
+                android:text="A - D"
+                android:background="@drawable/border"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/table"
+        android:layout_centerHorizontal="true"
+        android:text="Enter" />
+</RelativeLayout>

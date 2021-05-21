@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF0000"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/directions"
+        style="@style/LabelTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#FFFFFF"
+        android:text="Guess a number between 1 and 100" />
+
+    <EditText
+        android:id="@+id/input"
+        style="@style/InputTheme"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/directions"
+        android:layout_centerHorizontal="true"
+        android:background="#F1F1F1"
+        android:backgroundTint="#F8F8F8"
+        android:hint="0 - 100"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:id="@+id/guessesHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/LabelTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="#FFFFFF"
+            android:text="Guesses Left:" />
+
+        <TextView
+            android:id="@+id/guesses"
+            style="@style/LabelTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#F8F7F7"
+            android:text="8" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/response"
+        style="@style/LabelTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/guessesHolder"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/response"
+        android:layout_centerHorizontal="true"
+        android:text="Enter" />
+
+</RelativeLayout>
