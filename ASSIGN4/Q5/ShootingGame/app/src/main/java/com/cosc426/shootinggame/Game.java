@@ -1,5 +1,6 @@
 package com.cosc426.shootinggame;
 
+import java.security.SecureRandom;
 import java.util.Random;
 
 public class Game {
@@ -19,7 +20,7 @@ public class Game {
 
     private boolean fired;
     private boolean hit;
-    private Random r = new Random();
+    private Random r = new SecureRandom();
 
     public Game()
     {
