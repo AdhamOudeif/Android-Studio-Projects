@@ -6,6 +6,7 @@ import android.util.TypedValue;
 import android.view.Gravity;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import java.security.SecureRandom;
 
 import java.util.Random;
 
@@ -20,7 +21,7 @@ public class AppInterface extends RelativeLayout {
     public AppInterface(Context context) {
         super(context);
         nums = new TextView[SIZE];
-        r = new Random();
+        r = new SecureRandom();
         windowView = r.nextInt(9) + 1;
 
         final int DP = (int)(getResources().getDisplayMetrics().density);

@@ -1,5 +1,6 @@
 package com.cosc426.slidingpuzzle;
 
+import java.security.SecureRandom;
 import java.util.Random;
 
 public class Slide
@@ -9,7 +10,7 @@ public class Slide
 
     public Slide()
     {
-        random = new Random();
+        random = new SecureRandom();
     }
 
     public char[][] generateInitialBoard()
