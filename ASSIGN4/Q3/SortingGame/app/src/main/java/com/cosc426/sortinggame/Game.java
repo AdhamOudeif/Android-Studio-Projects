@@ -1,5 +1,6 @@
 package com.cosc426.sortinggame;
 
+import java.security.SecureRandom;
 import java.util.Random;
 
 public class Game {
@@ -11,7 +12,7 @@ public class Game {
     private int[] current;
 
     public Game() {
-        r = new Random();
+        r = new SecureRandom();
         //generate 10 random numbers for problem, set current
         solution = new int[SIZE];
         problem = new int[SIZE];
