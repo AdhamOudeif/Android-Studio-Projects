@@ -1,5 +1,6 @@
 package cosc426.program.mathquizes;
 
+import java.security.SecureRandom;
 import java.util.Random;
 
 public class Questions {
@@ -18,7 +19,7 @@ public class Questions {
         answer =0;
         questions = 0;
         correct = 0;
-        generator = new Random();
+        generator = new SecureRandom();
     }
 
     public void generate(){

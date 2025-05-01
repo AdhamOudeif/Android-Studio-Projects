@@ -1,5 +1,6 @@
 package cosc426.program.guessinggame;
 
+import java.security.SecureRandom;
 import java.util.Random;
 
 public class Game {
@@ -12,7 +13,7 @@ public class Game {
 
     public void newGame(){
         //New number and reset guesses
-        Random generator = new Random();
+        Random generator = new SecureRandom();
         guesses = 8;
         number = generator.nextInt(100)+1;
     }
