@@ -11,7 +11,9 @@ public class Calculator {
         boolean isPrime;
         String isitPrime;
         if (prime <= 1)
-            return isitPrime = "False";
+            {
+                return isitPrime = "False";
+            }
 
             // Check from 2 to n-1
             for (int i = 2; i < prime; i++)
