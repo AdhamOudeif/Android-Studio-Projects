@@ -1,6 +1,7 @@
 package com.cosc426.movingshapes;
 
 import android.graphics.Color;
+import java.security.SecureRandom;
 
 import java.util.Random;
 
@@ -15,7 +16,7 @@ public class Shape
     private int color;
 
     private int width, height;
-    private Random r = new Random();
+    private Random r = new SecureRandom();
 
     public Shape(int width, int height)
     {

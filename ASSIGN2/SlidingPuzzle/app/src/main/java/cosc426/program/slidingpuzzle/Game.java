@@ -1,5 +1,6 @@
 package cosc426.program.slidingpuzzle;
 
+import java.security.SecureRandom;
 import java.util.Random;
 
 public class Game {
@@ -30,7 +31,7 @@ public class Game {
 
     private int[] createRandomNumbers(){
         int[] numbers = new int[size*size];
-        Random generator = new Random();
+        Random generator = new SecureRandom();
         //initialize array
         for(int i = 0; i < numbers.length; i++)
             numbers[i] = i;
