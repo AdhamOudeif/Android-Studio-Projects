@@ -1,12 +1,13 @@
 package cosc426.program.sudoku2;
 
+import java.security.SecureRandom;
 import java.util.Random;
 
 public class Sudoku
 {
     public int[][] generate()
     {
-        Random rand = new Random();
+        Random rand = new SecureRandom();
 
         int[][] board = new int[9][9];
         for (int i = 0; i < 9; i++)
